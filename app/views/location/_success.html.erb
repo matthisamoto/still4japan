@@ -1,0 +1,10 @@
+{result : "success"
+	<% if(total >= 0) %>
+		, total : "<%= number_with_delimiter(total, ",") %>"
+	<% end %>
+	
+	<% if(longitude) %>
+		, longitude : "<%= longitude %>", latitude : "<%= latitude %>"
+	<% end %>
+	
+	}
